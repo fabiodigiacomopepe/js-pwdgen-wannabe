@@ -9,11 +9,14 @@ let userName, userSurname, userColor, messaggio;
 
 // Chiedo all'utente il proprio NOME
 userName = prompt("Come ti chiami?");
+userName = userName.replace(/\s+/g, '');
 console.log(userName);
 
 // Chiedo all'utente il proprio COGNOME
 userSurname = prompt("Qual è il tuo cognome?");
+userSurname = userSurname.replace(/\s+/g, '');
 console.log(userSurname);
+
 
 // Chiedo all'utente il proprio COLORE PREFERITO?
 userColor = prompt("E il tuo colore preferito?");
